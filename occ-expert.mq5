@@ -70,6 +70,7 @@ void OnTick()
    if (CopyBuffer(Handle_Indic,0,1,2,Buffer_slow) != 2) return;
    if (CopyBuffer(Handle_Indic,1,1,2,Buffer_fast) != 2) return;
    
+   
    double current_slow = NormalizeDouble(Buffer_slow[1],5);
    double current_fast = NormalizeDouble(Buffer_fast[1],5);
    double prior_slow   = NormalizeDouble(Buffer_slow[0],5);
